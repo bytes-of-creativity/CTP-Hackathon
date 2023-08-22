@@ -1,9 +1,7 @@
 import React from 'react'
-import { styled } from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
-
-//import { faCoffee } from '@fortawesome/free-solid-svg-icons';
+import { styled } from 'styled-components';//import used to make inline css easier
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import used to add icons, need to install package
+import { faEye } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
 
 const Context = styled.div`
     height: 60px;
@@ -17,7 +15,7 @@ const NavBarWrapper = styled.div`
     display: flex;//makes the items horizontal on one row
     align-items: center;
     justify-content: space-between;//adds spacing between items
-`
+`   
 const Left = styled.div`
     flex: 1;
 `
@@ -57,7 +55,6 @@ const ProfileView = styled.span`
     font-size: 20px;
     cursor: pointer;
 `
-//<FontAwesomeIcon icon={faCoffee} />
 
 const NavProfile = () => {
     return (
