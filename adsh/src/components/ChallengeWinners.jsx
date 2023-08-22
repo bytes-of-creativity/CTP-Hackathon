@@ -96,12 +96,12 @@ const ChallengeWinners = () => {
                 </TitleWinner>
                 <WinnerContainer>
                     <WinnerusernameContainer>
-                        <WinnerOneImg src={Placeholder_view} alt="Winner 1" />
-                        <WinnerOneImgUser>Winner 1 User</WinnerOneImgUser>
-                    </WinnerusernameContainer>
-                    <WinnerusernameContainer>
                         <WinnerTwoImg src={Placeholder_view} alt="Winner 2" />
                         <WinnerTwoImgUser>Winner 2 User</WinnerTwoImgUser>
+                    </WinnerusernameContainer>
+                    <WinnerusernameContainer>
+                        <WinnerOneImg src={Placeholder_view} alt="Winner 1" />
+                        <WinnerOneImgUser>Winner 1 User</WinnerOneImgUser>
                     </WinnerusernameContainer>
                     <WinnerusernameContainer>
                     <WinnerThreeImg src={Placeholder_view} alt="Winner 3" />
