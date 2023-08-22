@@ -1,0 +1,12 @@
+.post-container {
+    padding: 30px 15px 25px;
+    height: 60px;
+    display: flex;
+}
+
+.featured-post,
+.challenge-post {
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
