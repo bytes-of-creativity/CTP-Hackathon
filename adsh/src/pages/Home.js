@@ -2,7 +2,7 @@ import React from "react";
 import NavProfile from '../components/NavProfile'
 import ChallengeWinners from "../components/ChallengeWinners";
 import CurrentChallenge from "../components/CurrentChallenge";
-import PostView from "../components/PostView";
+import PostButtons from "../components/PostButtons/PostButtons";
 
 const Home = () => {
     return (
@@ -10,7 +10,7 @@ const Home = () => {
             <NavProfile/>
             <ChallengeWinners/>
             <CurrentChallenge/>
-            <PostView/>
+            <PostButtons/>
         </div>
     )
 }

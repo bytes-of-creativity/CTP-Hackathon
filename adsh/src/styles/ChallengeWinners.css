@@ -43,3 +43,7 @@ body {
 .winner-user-container {
     text-align: center;
 }
+
+#winner-user-name{
+    font-size: 18px;
+}
