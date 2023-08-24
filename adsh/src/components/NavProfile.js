@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import used to add icons, need to install package
 import { faUser, faPlus, faRobot } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
-
 import '../styles/NavProfile.css';
 
 const NavProfile = () => {
@@ -29,7 +28,7 @@ const NavProfile = () => {
     );
 }
 
-const NavBar = (props) => {
+export const NavBar = (props) => {
     return (
         <nav className='navbar'>
             <div className='navbar-item-container'> {props.children}</div>
@@ -37,7 +36,7 @@ const NavBar = (props) => {
     )
 }
 
-const NavItems = (props) => {
+export const NavItems = (props) => {
     const [open, setOpen] = useState(false);
     return (
         <li className='nav-item'>
