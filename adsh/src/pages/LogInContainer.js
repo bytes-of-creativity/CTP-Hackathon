@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import UserLogin from '../components/UserLoginContainer';
+import UserLogin from '../components/UserLogin';
 import SignUp from '../components/SignUp';
 
 
-const LogIn = () => {
+const LogInContainer = () => {
     const [currentForm, setCurrentForm] = useState('login');
     const toggleForm =( formName ) => {
         setCurrentForm(formName)
@@ -19,4 +19,4 @@ const LogIn = () => {
 }
 
 
-export default LogIn;
+export default LogInContainer;

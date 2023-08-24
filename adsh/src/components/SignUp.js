@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/SignUp.css';
 import {NavBar, NavItems} from '../components/NavProfile'
-import { UserName, PassWord} from './UserLoginContainer'
+import { UserName, PassWord} from './UserLogin'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import used to add icons, need to install package
 import { faPalette, faPlus, faRobot } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
 
