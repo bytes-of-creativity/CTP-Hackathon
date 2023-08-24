@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/UserLogin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import used to add icons, need to install package
 import { faPalette, faRobot } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
-import {NavBar, NavItems} from '../components/NavProfile'
+import {NavBar, NavItems} from './NavProfile'
 
 const UserLogin = (props) => {
     const [username, setUserName] = useState('');
@@ -11,7 +11,7 @@ const UserLogin = (props) => {
     const handleChange = (e) => {
         if (e.target.id === 'username') {
             setUserName(e.target.value);
-        } else if (e.target.id === 'password') {
+        } else if (e.target.id === 'pw') {
             setPassword(e.target.value);
         }
     }

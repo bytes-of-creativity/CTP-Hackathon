@@ -67,6 +67,7 @@ body {
     margin-top: 40px;
     width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 
 #submit-button {
@@ -78,6 +79,7 @@ body {
     border-radius: 4px;
     font-size: large;
     letter-spacing: 1px;
+    cursor: pointer;
 }
 
 #submit-button:hover {

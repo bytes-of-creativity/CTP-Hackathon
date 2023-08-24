@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/SignUp.css';
 import {NavBar, NavItems} from '../components/NavProfile'
-import { UserName, PassWord, SubmitButton } from '../components/UserLogin'
+import { UserName, PassWord} from './UserLoginContainer'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import used to add icons, need to install package
 import { faPalette, faPlus, faRobot } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
 
@@ -13,10 +13,10 @@ const SignUp = (props) => {
     const handleChange = (e) => {
         if (e.target.id === 'username') {
             setUserName(e.target.value);
-        } else if (e.target.id === 'password') {
+        } else if (e.target.id === 'pw') {
             setPassword(e.target.value);
         } else if (e.target.id === 'email') {
-            setPassword(e.target.value);
+            setEmail(e.target.value);
         }
     }
 
