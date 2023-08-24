@@ -1,10 +1,10 @@
 import React from "react";
-import NavProfile from '../components/NavProfile'
+import HomeContainer from '../pages/HomeContainer'
 
 const DummyContainer = () => {
     return (
         <div>
-            <NavProfile/>
+            <HomeContainer />
         </div>
     )
 }
