@@ -1,7 +1,7 @@
 import React from "react";
 import NavProfile from '../components/NavProfile'
 
-const Dummy = () => {
+const DummyContainer = () => {
     return (
         <div>
             <NavProfile/>
@@ -9,4 +9,4 @@ const Dummy = () => {
     )
 }
 
-export default Dummy
+export default DummyContainer

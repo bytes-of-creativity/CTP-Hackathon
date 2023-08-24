@@ -4,7 +4,7 @@ import ChallengeWinners from "../components/ChallengeWinners";
 import CurrentChallenge from "../components/CurrentChallenge";
 import PostButtons from "../components/PostButtons/PostButtons";
 
-const Home = () => {
+const HomeContainer = () => {
     return (
         <div>
             <NavProfile/>
@@ -15,4 +15,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default HomeContainer
