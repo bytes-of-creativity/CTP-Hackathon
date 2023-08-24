@@ -1,9 +1,13 @@
 import './styles/App.css';
-import Home from './pages/Home';
-
+import HomeContainer from './pages/HomeContainer';
+import DummyContainer from './pages/DummyContainer';
+import { Routes, Route } from "react-router-dom"
 function App() {
   return (
-  <Home/>
+    <Routes>
+      <Route path="/" element={<DummyContainer />} />
+      <Route path="home" element={<HomeContainer />} />
+    </Routes>
   )
 }
 
