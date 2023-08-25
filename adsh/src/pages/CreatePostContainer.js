@@ -1,9 +1,11 @@
 import React from "react";
-import '../styles/CreatePostPage.css'
+import '../styles/CreatePost.css'
+import NavProfile from '../components/NavProfile'
 
-export default function CreatePostPage() {
+const CreatePostContainer = () => {
     return (
         <div className='create-post-page'>
+            <NavProfile/>
             <div className='upload-img-section'>
                 <button id='upload-img-button'>Upload Image</button>
             </div>
@@ -35,3 +37,5 @@ export default function CreatePostPage() {
         </div>
     );
 }
+
+export default CreatePostContainer

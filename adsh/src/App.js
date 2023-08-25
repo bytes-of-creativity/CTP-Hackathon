@@ -1,12 +1,18 @@
 import './styles/App.css';
-import Home from './pages/Home';
-import CreatePostPage from './pages/CreatePostPage'
+
+import HomeContainer from './pages/HomeContainer';
+import LogInContainer from './pages/LogInContainer';
+import CreatePostContainer from './pages/CreatePostContainer'
+import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
-  <Home/>
+    <Routes>
+      <Route path="/" element={<HomeContainer/>} />
+      <Route path="/login" element={<LogInContainer/>} />
+      <Route path="/create-post" element={<CreatePostContainer/>} />
+    </Routes>
   )
-  //return CreatePostPage()
 }
 
 export default App;
