@@ -14,7 +14,7 @@ const NavProfile = () => {
                     <NavItems id='right-logo1' icon={faPlus} className="fa-6x">
                         <div class='dropdown'>
                         <ul>
-                            <DropDownItem link="#">Post/Submit</DropDownItem>
+                            <DropDownItem value="/create-post" link="#">Post/Submit</DropDownItem>
                         </ul>
                         </div>
                     </NavItems>
