@@ -1,8 +1,8 @@
 import './styles/App.css';
 import HomeContainer from './pages/HomeContainer';
 import LogInContainer from './pages/LogInContainer';
-import { Routes, Route } from "react-router-dom"
 import ViewPostContainer from './pages/ViewPostContainer';
+import { Routes, Route } from "react-router-dom"
 
 function App() {
   return (
