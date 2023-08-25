@@ -3,7 +3,7 @@ import '../styles/ViewPost.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { NavBar, DropDown, DropDownItem, NavItems } from './NavProfile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faFlag, faRobot } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
+import { faHeart, faFlag, faRobot, faArrowLeft } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
 
 
 const ViewPost = () => {
@@ -17,8 +17,7 @@ const ViewPost = () => {
 
             <div className='view-post-page'>
                 <NavBar>
-                    <NavItems id='logo' icon={faRobot} className="fa-lg">
-                    </NavItems>
+                    <BackButton/>
                 </NavBar>
                 <ImageView link="land.jpg" altText="A beautiful landscape" />
                 <div className='post-info'>
@@ -113,6 +112,17 @@ const LikeCount = () => {
                 <FontAwesomeIcon icon={faHeart} size="lg"/>
             </button>
             {countUp >= 0 && <span className="like-count">{countUp}</span>}
+        </div>
+    )
+}
+
+const BackButton = () => {
+    return (
+        <div className='back-button-container'>
+            <button className='back-button'>
+                <FontAwesomeIcon icon={faArrowLeft}/> Back
+            </button>
+            
         </div>
     )
 }
