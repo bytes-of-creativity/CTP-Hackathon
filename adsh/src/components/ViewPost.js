@@ -12,21 +12,18 @@ const ViewPost = () => {
     
     return (
         <div className='view-post-page'>
-            <ImageView link="img2.jpg" altText="A beautiful landscape" />
+            <ImageView link="land.jpg" altText="A beautiful landscape" />
             <div className='post-info'>
+                < TitleView title={userTitle}/>
                 <div className='post-type'>
-                    {imageType === 'challenge' ? (
-                        <>
-                            <TitleView title={userTitle} />
-                            <Challenge />
-                        </>
-                    ) : (
-                        <TitleView title={userTitle} />
-                    )}
+                    {
+                    imageType === 'challenge' ? (<Challenge />) : (<Post/>)
+                    }
                 </div>
                 <div className='post-description-container'>
                     <DescriptionView description={userDescription} />
                 </div>
+                <hr />
                 <div className='tag-icon-container'>
                     <TagView tag={userTag} />
                     <div className='icon-container'>
@@ -59,6 +56,12 @@ const ImageView = (props) => {
     )
 };
 
+const TitleView = (props) => {
+    return (
+        <div className='title-section'> {props.title} </div>
+    )
+};
+
 const DescriptionView = (props) => {
     return (
         <textarea id='description-field' type='text' defaultValue={props.description} readOnly />
@@ -68,11 +71,6 @@ const DescriptionView = (props) => {
 const TagView = (props) => {
     return (
         <textarea className='tag-section' type='text' defaultValue={props.tag} readOnly />
-    )
-};
-const TitleView = (props) => {
-    return (
-        <div className='title-section'> {props.title} </div>
     )
 };
 
