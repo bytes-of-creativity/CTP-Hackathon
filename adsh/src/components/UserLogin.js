@@ -5,16 +5,15 @@ import { faPalette, faRobot } from '@fortawesome/free-solid-svg-icons';//import 
 import {NavBar, NavItems} from './NavProfile'
 import { auth } from '../firebase-config';
 import { signInWithEmailAndPassword } from 'firebase/auth';
-
-
+import {Email} from './SignUp'
 
 const UserLogin = (props) => {
-    const [username, setUserName] = useState('');
+    const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
     const handleChange = (e) => {
-        if (e.target.id === 'username') {
-            setUserName(e.target.value);
+        if (e.target.id === 'email') {
+            setEmail(e.target.value);
         } else if (e.target.id === 'pw') {
             setPassword(e.target.value);
         }
@@ -42,7 +41,7 @@ const UserLogin = (props) => {
         <div className='login-container'>
             <FontAwesomeIcon className="icon" icon={faPalette} />
             <form onSubmit={handleSubmit}>
-                <UserName value={username} onChange={handleChange}/>
+                <Email value={email} onChange={handleChange}/>
                 <PassWord value={password} onChange={handleChange}/>
                 <div className='submit-bt'>
                     <SubmitButton onClick={login}/>
@@ -53,14 +52,6 @@ const UserLogin = (props) => {
                 <ForgotPw/>
             </div>
         </div>
-        </div>
-    )
-}
-
-export const UserName = (props) => {
-    return (
-        <div className='username-container'>
-            <input id="username" className="username-class" value={props.value} placeholder='USERNAME' required onChange={props.onChange}/>
         </div>
     )
 }

@@ -81,7 +81,7 @@ a {
     margin-top: 2px;
 }
 
-.nav-item:hover .dropdown {
+.dropdown {
     display: block;
 }
 
