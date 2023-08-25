@@ -5,7 +5,6 @@ import { NavBar, DropDown, DropDownItem, NavItems } from './NavProfile';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faFlag, faRobot, faArrowLeft } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
 
-
 const ViewPost = () => {
     const userTitle = "This is Title";
     const userDescription = "This is the user's description.";
@@ -16,7 +15,7 @@ const ViewPost = () => {
         <div>
             <div className='view-post-page'>
                 <NavBar>
-                    <BackButton/>
+                    <BackButton />
                 </NavBar>
                 <ImageView link="land.jpg" altText="A beautiful landscape" />
                 <div className='post-info'>
@@ -34,7 +33,7 @@ const ViewPost = () => {
                         <TagView tag={userTag} />
                         <div className='all-icon-container'>
                             <IconView id='heart-icon'>
-                                <LikeCount/>
+                                <LikeCount />
                             </IconView>
                             <IconView id='flag-icon'>
                                 <NavItems id='flag-icon-item' icon={faFlag}>
@@ -108,7 +107,7 @@ const LikeCount = () => {
     return (
         <div className='like-count-container'>
             <button className='like-button' onClick={() => setCountUp(countUp + 1)}>
-                <FontAwesomeIcon icon={faHeart} size="lg"/>
+                <FontAwesomeIcon icon={faHeart} size="lg" />
             </button>
             {countUp >= 0 && <span className="like-count">{countUp}</span>}
         </div>
@@ -119,9 +118,9 @@ const BackButton = () => {
     return (
         <div className='back-button-container'>
             <button className='back-button'>
-                <FontAwesomeIcon icon={faArrowLeft}/> Back
+                <FontAwesomeIcon icon={faArrowLeft} /> Back
             </button>
-            
+
         </div>
     )
 }
