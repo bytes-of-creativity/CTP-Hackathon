@@ -49,7 +49,7 @@ export const NavItems = (props) => {
     )
 }
 
-const DropDown = (props) => {
+export const DropDown = (props) => {
     return (
         <div className='dropdown'>
             {props.children}
@@ -57,7 +57,7 @@ const DropDown = (props) => {
     )
 }
 
-const DropDownItem = (props) => {
+export const DropDownItem = (props) => {
     return (
         <Link to={props.value} href={props.link} className='dropdown-item'>
             {props.children}

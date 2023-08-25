@@ -1,0 +1,119 @@
+* {
+    font-family: 'Karla';
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    overflow: auto;
+}
+
+#root {
+    height: 100%;
+}
+
+.view-post-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding-top: 30px;
+}
+
+.img-section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.post-info {
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+}
+
+.post-type {
+    margin: 15px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.title-section {
+    font-size: 40px;
+}
+
+
+.post-info > * {
+    margin: 15px auto;
+}
+
+.post-description-container, 
+.tag-icon-container {
+    display: block;
+    font-size: 16px;
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+p {
+    width: 70%;
+}
+
+.icon-container {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.icon-button {
+    color: pink;
+    text-decoration: none;
+    position: relative;
+}
+
+
+textarea {
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    resize: none;
+    border: none;
+}
+
+#description-field {
+    height: 150px;
+}
+
+#tags-field {
+    height: 100px;
+}
+
+
+.dropdown {
+    position: absolute;
+    top:100%;
+    right: 0;
+    background-color: #FFE5D2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+    margin-top: 2px;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+.dropdown-item {
+    font-family: 'Courier New', Courier, monospace;
+    display: block;
+    margin: 5px 0px;
+    text-decoration: none;
+    color: black;
+    justify-content: flex-end;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(240, 248, 255, .7);
+    filter: brightness(1.5)
+}
