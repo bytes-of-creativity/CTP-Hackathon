@@ -14,7 +14,6 @@ const ViewPost = () => {
 
     return (
         <div>
-
             <div className='view-post-page'>
                 <NavBar>
                     <BackButton/>

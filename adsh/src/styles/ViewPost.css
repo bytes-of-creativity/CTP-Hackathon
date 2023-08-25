@@ -111,6 +111,8 @@ hr {
 
 p {
     width: 100%;
+    color: #555;
+    margin-top: 0;
 }
 
 .all-icon-container {
@@ -157,10 +159,17 @@ textarea {
 
 #description-field {
     height: 150px;
+    background-color: #f4f4f26e;
+    padding: 10px 10px;
 }
 
 #tags-field {
     height: 100px;
+}
+
+.tag-section {
+    background-color: #f4f4f26e;
+    padding: 10px 10px;
 }
 
 .dropdown {
