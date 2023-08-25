@@ -4,7 +4,7 @@ body {
 }
 
 .background-container {
-    height: 45vh;
+    height: 53vh;
     width: 100%;
     padding-top: 5vh;
     display: flex;
@@ -16,6 +16,7 @@ body {
 }
 
 .winner-title {
+    margin: 0;
     font-size: 50px;
     font-weight: bold;
     align-content: center;

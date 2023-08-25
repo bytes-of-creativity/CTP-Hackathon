@@ -7,8 +7,9 @@ import { Routes, Route } from "react-router-dom"
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<ViewPostContainer/>} />
+      <Route path="/" element={<HomeContainer/>} />
       <Route path="/login" element={<LogInContainer/>} />
+      <Route path="/ViewPost" element={<ViewPostContainer/>} />
     </Routes>
   )
 }
