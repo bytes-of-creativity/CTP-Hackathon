@@ -21,7 +21,7 @@ const UserLogin = (props) => {
     const login = async () => {
         try{
             //for now I will treat username as an email
-            const user = await signInWithEmailAndPassword(auth, username, password);
+            const user = await signInWithEmailAndPassword(auth, email, password);
             console.log(user);
         } catch (error) {
             console.log(error.message);
