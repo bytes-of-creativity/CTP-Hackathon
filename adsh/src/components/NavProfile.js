@@ -12,16 +12,20 @@ const NavProfile = () => {
                 </NavItems>
                 <div className='right-nav-items'>
                     <NavItems id='right-logo1' icon={faPlus} className="fa-6x">
-                        <DropDown>
+                        <div class='dropdown'>
+                        <ul>
                             <DropDownItem link="#">Post/Submit</DropDownItem>
-                        </DropDown>
+                        </ul>
+                        </div>
                     </NavItems>
                     <NavItems id='right-logo2' icon={faUser} className="fa-2x">
-                        <DropDown>
-                            <DropDownItem link="#"> My Profile</DropDownItem>
-                            <DropDownItem link="#">Setting</DropDownItem>
-                            <DropDownItem value="/login" link="#">Log Out</DropDownItem>
-                        </DropDown>
+                        <div class='dropdown'>
+                            <ul>
+                                <DropDownItem link="#"> My Profile</DropDownItem>
+                                <DropDownItem link="#">Setting</DropDownItem>
+                                <DropDownItem value="/login" link="#">Log Out</DropDownItem>
+                            </ul>
+                        </div>
                     </NavItems>
                 </div>
             </NavBar>
@@ -39,9 +43,10 @@ export const NavBar = (props) => {
 
 export const NavItems = (props) => {
     const [open, setOpen] = useState(false);
+    
     return (
         <li className='nav-item'>
-            <a href={props.link} className='icon-button' onClick={() => setOpen(!open)} >
+            <a href={props.link} className='icon-button' onClick={(e) =>{ e.preventDefault(); setOpen(!open);}}>
                 <FontAwesomeIcon icon={props.icon} />
             </a>
             {open && props.children}
@@ -49,7 +54,7 @@ export const NavItems = (props) => {
     )
 }
 
-const DropDown = (props) => {
+export const DropDown = (props) => {
     return (
         <div className='dropdown'>
             {props.children}
@@ -57,7 +62,7 @@ const DropDown = (props) => {
     )
 }
 
-const DropDownItem = (props) => {
+export const DropDownItem = (props) => {
     return (
         <Link to={props.value} href={props.link} className='dropdown-item'>
             {props.children}
