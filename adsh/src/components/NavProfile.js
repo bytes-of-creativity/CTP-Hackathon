@@ -3,6 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import used t
 import { faUser, faPlus, faRobot } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
 import '../styles/NavProfile.css';
 import { Link, Routes, Route } from "react-router-dom"
+// import { auth } from '../firebase-config';
+// import { signOut, getAuth } from "firebase/auth";
+
+// const logout = async () => {
+//     await signOut(auth);
+// }
 
 const NavProfile = () => {
     return (
