@@ -1,7 +1,7 @@
 # CTP-Hackathon
 
 ## Description
-Appname is a web-based social media platform geared towards artists. Users can: create an account and log in/out, post pictures with a title and description, view and edit their profile, and follow other users. What makes Appname unique compared to other social media platforms is that it includes an AI-generated weekly challenge prompt for artists to participate in, where the top three winners are determined by the amount of likes, along with the ability to report AI-generated images.
+Bytes of Creativity is a web-based social media platform geared towards artists. Users can: create an account and log in/out, post pictures with a title and description, view and edit their profile, and follow other users. What makes Appname unique compared to other social media platforms is that it includes an AI-generated weekly challenge prompt for artists to participate in, where the top three winners are determined by the amount of likes, along with the ability to report AI-generated images.
 
 ## Tech Stack
 For frontend development, we used HTML, CSS, JavaScript, and React. For backend development, we used Firebase and JavaScript.
