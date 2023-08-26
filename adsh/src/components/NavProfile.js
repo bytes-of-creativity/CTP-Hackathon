@@ -21,8 +21,8 @@ const NavProfile = () => {
                     <NavItems id='right-logo2' icon={faUser} className="fa-2x">
                         <div class='dropdown'>
                             <ul>
-                                <DropDownItem link="#"> My Profile</DropDownItem>
-                                <DropDownItem link="#">Setting</DropDownItem>
+                                <DropDownItem value="/profile" link="#"> My Profile</DropDownItem>
+                                <DropDownItem  link="#">Setting</DropDownItem>
                                 <DropDownItem value="/login" link="#">Log Out</DropDownItem>
                             </ul>
                         </div>
