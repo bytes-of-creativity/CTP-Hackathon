@@ -13,5 +13,5 @@ For project management, we used Jira to create and assign tickets. We also worke
 Prerequisite:  Make sure to have Node.js and npm installed. If not already installed, install here: https://nodejs.org/en.
 1) Navigate to the desired directory to place the files.
 2) Clone the repo: git clone https://github.com/bytes-of-creativity/CTP-Hackathon.git (HTTPS) Then open the repo in your code editor of choice.
-3.) Install packages: npm install or yarn install.
-4.) To launch an application, run `npm run start`.
+3) Install packages: npm install or yarn install.
+4) To launch an application, run `npm run start`.
