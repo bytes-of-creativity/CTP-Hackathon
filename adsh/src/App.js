@@ -6,7 +6,6 @@ import ProfilePageContainer from './pages/ProfilePageContainer';
 import CreatePostContainer from './pages/CreatePostContainer'
 import ViewPostContainer from './pages/ViewPostContainer';
 import { Routes, Route } from "react-router-dom"
-//import AddUser from './data/AddUser'; error in here when exported
 
 function App() {
   return (

@@ -4,10 +4,6 @@ import {NavBar, NavItems} from '../components/NavProfile'
 import { PassWord} from './UserLogin'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import used to add icons, need to install package
 import { faPalette, faPlus, faRobot } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { auth } from '../firebase-config';
-
-
 
 const SignUp = (props) => {
     const [email, setEmail] = useState('');
@@ -18,16 +14,6 @@ const SignUp = (props) => {
             setEmail(e.target.value);
         } else if (e.target.id === 'pw') {
             setPassword(e.target.value);
-        }
-    }
-
-    const register = async () => {
-        try{
-            const user = await createUserWithEmailAndPassword(auth, email, password);
-            console.log(user);
-        } catch (error) {
-            console.log(error.message)
-            // Remember to deal with message thats says password must e 6 characters 
         }
     }
 
@@ -47,7 +33,7 @@ const SignUp = (props) => {
                 <Email value={email} onChange={handleChange}/>
                 <PassWord value={password} onChange={handleChange}/>
                 <div className='submit-bt'>
-                    <SignUpButton onClick={register}/>
+                    <SignUpButton/>
                 </div>
                 <button id="back-to-login" onClick={() => props.onFormSwitch('login')}> Have an account? Sign in Here</button>
             </form>
@@ -64,9 +50,9 @@ export const Email = (props) => {
     )
 }
 
-export const SignUpButton = (props) => {
+export const SignUpButton = () => {
     return (
-        <button id='submit-button' type='submit' onClick={props.onClick}> Sign Up </button>
+        <button id='submit-button' type='submit'> Sign Up </button>
     )
 }
 

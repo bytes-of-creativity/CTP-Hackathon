@@ -3,8 +3,6 @@ import '../styles/UserLogin.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';//import used to add icons, need to install package
 import { faPalette, faRobot } from '@fortawesome/free-solid-svg-icons';//import used to add the eye icon, need to install package
 import {NavBar, NavItems} from './NavProfile'
-import { auth } from '../firebase-config';
-import { signInWithEmailAndPassword } from 'firebase/auth';
 import {Email} from './SignUp'
 
 const UserLogin = (props) => {
@@ -16,15 +14,6 @@ const UserLogin = (props) => {
             setEmail(e.target.value);
         } else if (e.target.id === 'pw') {
             setPassword(e.target.value);
-        }
-    }
-    const login = async () => {
-        try{
-            //for now I will treat username as an email
-            const user = await signInWithEmailAndPassword(auth, email, password);
-            console.log(user);
-        } catch (error) {
-            console.log(error.message);
         }
     }
 
@@ -44,7 +33,7 @@ const UserLogin = (props) => {
                 <Email value={email} onChange={handleChange}/>
                 <PassWord value={password} onChange={handleChange}/>
                 <div className='submit-bt'>
-                    <SubmitButton onClick={login}/>
+                    <SubmitButton />
                 </div>
             </form>
             <div className='signup-container'>
@@ -64,9 +53,9 @@ export const PassWord = (props) => {
     )
 }
 
-export const SubmitButton = (props) => {
+export const SubmitButton = () => {
     return (
-        <button id='submit-button' type='submit' onClick={props.onClick}> Log In </button>
+        <button id='submit-button' type='submit'> Log In </button>
     )
 }
 
